@@ -4,7 +4,8 @@ This repository contains configurations to create a Docker container with:
 
 * *Ubuntu* 16.04
 * *Apache2*
-* *Php* 7 latest version
+* *Php7* latest version
+* *Supervisor* to manage processus
 
 == Getting Started
 
@@ -35,9 +36,9 @@ Firstly, you have to plug a PHP project. To do that, you need to create a *data 
 .docker-compose.yml
 ----
 services:
-  docker-ubuntu-apache2-php7:
+  ubuntu-apache2-php7:
     image: lparet/docker-ubuntu-apache2-php7
-    container_name: docker-ubuntu-apache2-php7
+    container_name: ubuntu-apache2-php7
     restart: always
     volumes:
       - /path/to/your/project:/var/www/html:rw

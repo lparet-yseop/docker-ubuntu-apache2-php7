@@ -1,4 +1,4 @@
-FROM lparet/docker-ubuntu-apache2:1.1
+FROM lparet/docker-ubuntu-apache2:1.2
 LABEL Louis Paret <perso@louisparet.fr>
 
 ## Install packages
