@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  docker-ubuntu-apache2-php7:
+    image: lparet/docker-ubuntu-apache2-php7:1.0
+    container_name: docker-ubuntu-apache2-php7
+    restart: always
+    volumes:
+      - /path/to/your/project:/var/www/html:rw
+    ports:
+      - 90:80
