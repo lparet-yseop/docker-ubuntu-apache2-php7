@@ -11,7 +11,5 @@ RUN apt-get update \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
-## Add files
-
 ## CMD : Supervisor
 CMD ["supervisord","-c","/etc/supervisord.conf"]
